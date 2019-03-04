@@ -44,3 +44,14 @@ header a, a:visited {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+.title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    top: 23px;
+}
+.artist {
+    color: #EEEEEE;
+    font-size: 12px;
+    top: 40px;
+}
