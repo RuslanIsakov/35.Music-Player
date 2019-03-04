@@ -55,3 +55,15 @@ header a, a:visited {
     font-size: 12px;
     top: 40px;
 }
+.pl {
+    background: transparent url("../images/spr.png") no-repeat scroll -274px -175px;
+    cursor: pointer;
+    height: 34px;
+    left: 270px;
+    position: absolute;
+    top: 20px;
+    width: 32px;
+}
+.pl:hover {
+    top: 21px;
+}
