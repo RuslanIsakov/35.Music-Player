@@ -67,3 +67,20 @@ header a, a:visited {
 .pl:hover {
     top: 21px;
 }
+.cover {
+    background: transparent url(../images/cover1.jpg) no-repeat scroll center top;
+    border-radius: 5px 5px 5px 5px;
+    height: 94px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 94px;
+}
+.controls {
+    cursor: pointer;
+    height: 23px;
+    left: 167px;
+    position: absolute;
+    top: 65px;
+    width: 138px;
+}
