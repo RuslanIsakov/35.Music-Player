@@ -118,3 +118,13 @@ header a, a:visited {
 .hidden {
     display: none;
 }
+.controls .visible {
+    display: block;
+}
+.volume {
+    height: 11px;
+    left: 186px;
+    position: absolute;
+    top: 96px;
+    width: 112px;
+}
