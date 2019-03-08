@@ -100,3 +100,9 @@ header a, a:visited {
 .controls .rew {
     background-position: -54px -171px;
 }
+.controls .fwd {
+    background-position: -100px -171px;
+}
+.controls .play:hover {
+    background-position: -8px -170px;
+}
