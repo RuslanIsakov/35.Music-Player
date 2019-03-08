@@ -93,3 +93,10 @@ header a, a:visited {
 .controls .play {
     background-position: -8px -171px;
 }
+.controls .pause {
+    background-position: -8px -198px;
+    display: none;
+}
+.controls .rew {
+    background-position: -54px -171px;
+}
