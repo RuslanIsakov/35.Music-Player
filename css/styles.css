@@ -84,3 +84,12 @@ header a, a:visited {
     top: 65px;
     width: 138px;
 }
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+    background: transparent url("../images/spr.png") no-repeat scroll 0 0;
+    float: left;
+    height: 100%;
+    width: 33%;
+}
+.controls .play {
+    background-position: -8px -171px;
+}
