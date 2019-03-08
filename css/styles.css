@@ -112,3 +112,9 @@ header a, a:visited {
 .controls .rew:hover {
     background-position: -54px -170px;
 }
+.controls .fwd:hover {
+    background-position: -100px -170px;
+}
+.hidden {
+    display: none;
+}
