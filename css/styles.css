@@ -106,3 +106,9 @@ header a, a:visited {
 .controls .play:hover {
     background-position: -8px -170px;
 }
+.controls .pause:hover {
+    background-position: -8px -197px;
+}
+.controls .rew:hover {
+    background-position: -54px -170px;
+}
