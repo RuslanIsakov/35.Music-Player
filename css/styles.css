@@ -141,3 +141,12 @@ header a, a:visited {
     position: absolute;
     top: 0;
 }
+.ui-slider-handle {
+    cursor: pointer;
+    height: 10px;
+    margin-left: -5px;
+    position: absolute;
+    top: 2px;
+    width: 10px;
+    z-index: 2;
+}
