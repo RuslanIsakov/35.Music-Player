@@ -54,3 +54,15 @@ jQuery(document).ready(function() {
 
         stopAudio();
     });
+// forward click
+    $('.fwd').click(function (e) {
+        e.preventDefault();
+
+        stopAudio();
+
+        var next = $('.playlist li.active').next();
+        if (next.length == 0) {
+            next = $('.playlist li:first-child');
+        }
+        initAudio(next);
+    });
