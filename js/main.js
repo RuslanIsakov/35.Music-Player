@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
         $('.play').addClass('hidden');
         $('.pause').addClass('visible');
     }
- function stopAudio() {
+    function stopAudio() {
         song.pause();
 
         $('.play').removeClass('hidden');
@@ -54,7 +54,8 @@ jQuery(document).ready(function() {
 
         stopAudio();
     });
-// forward click
+
+    // forward click
     $('.fwd').click(function (e) {
         e.preventDefault();
 
@@ -66,7 +67,8 @@ jQuery(document).ready(function() {
         }
         initAudio(next);
     });
-// rewind click
+
+    // rewind click
     $('.rew').click(function (e) {
         e.preventDefault();
 
@@ -78,7 +80,8 @@ jQuery(document).ready(function() {
         }
         initAudio(prev);
     });
-// show playlist
+
+    // show playlist
     $('.pl').click(function (e) {
         e.preventDefault();
 
@@ -90,7 +93,8 @@ jQuery(document).ready(function() {
         stopAudio();
         initAudio($(this));
     });
-  // initialization - first element in playlist
+
+    // initialization - first element in playlist
     initAudio($('.playlist li:first-child'));
 
     // set volume
@@ -108,3 +112,15 @@ jQuery(document).ready(function() {
         },
         stop: function(event,ui) {},
     });
+
+    // empty tracker slider
+    tracker.slider({
+        range: 'min',
+        min: 0, max: 10,
+        start: function(event,ui) {},
+        slide: function(event, ui) {
+            song.currentTime = ui.value;
+        },
+        stop: function(event,ui) {}
+    });
+});
