@@ -78,3 +78,15 @@ jQuery(document).ready(function() {
         }
         initAudio(prev);
     });
+// show playlist
+    $('.pl').click(function (e) {
+        e.preventDefault();
+
+        $('.playlist').fadeIn(300);
+    });
+
+    // playlist elements - click
+    $('.playlist li').click(function () {
+        stopAudio();
+        initAudio($(this));
+    });
