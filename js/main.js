@@ -66,3 +66,15 @@ jQuery(document).ready(function() {
         }
         initAudio(next);
     });
+// rewind click
+    $('.rew').click(function (e) {
+        e.preventDefault();
+
+        stopAudio();
+
+        var prev = $('.playlist li.active').prev();
+        if (prev.length == 0) {
+            prev = $('.playlist li:last-child');
+        }
+        initAudio(prev);
+    });
