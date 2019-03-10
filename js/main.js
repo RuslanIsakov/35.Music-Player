@@ -90,3 +90,21 @@ jQuery(document).ready(function() {
         stopAudio();
         initAudio($(this));
     });
+  // initialization - first element in playlist
+    initAudio($('.playlist li:first-child'));
+
+    // set volume
+    song.volume = 0.8;
+
+    // initialize the volume slider
+    volume.slider({
+        range: 'min',
+        min: 1,
+        max: 100,
+        value: 80,
+        start: function(event,ui) {},
+        slide: function(event, ui) {
+            song.volume = ui.value / 100;
+        },
+        stop: function(event,ui) {},
+    });
