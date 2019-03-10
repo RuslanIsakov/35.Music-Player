@@ -34,3 +34,23 @@ jQuery(document).ready(function() {
         $('.play').addClass('hidden');
         $('.pause').addClass('visible');
     }
+ function stopAudio() {
+        song.pause();
+
+        $('.play').removeClass('hidden');
+        $('.pause').removeClass('visible');
+    }
+
+    // play click
+    $('.play').click(function (e) {
+        e.preventDefault();
+
+        playAudio();
+    });
+
+    // pause click
+    $('.pause').click(function (e) {
+        e.preventDefault();
+
+        stopAudio();
+    });
